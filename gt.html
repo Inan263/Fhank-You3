@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia-like Header with Language Option</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     
+
+
+
+    <!-- Enhanced Wikipedia-like Header -->
+    <header id="site-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="12.jpg" alt="Wikipedia Logo">
+                </a>
+            </div>
+
+           
+        <div class="header-bottom">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="/Main_Page">Página principal</a></li>
+                    <li><a href="/Contents">
+Contenido</a></li>
+                    
+                    <li><a href="/Random_page">Página aleatoria</a></li>
+                    <li><a href="/About">Acerca de</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" name="search" placeholder="Search Wikipedia...">
+                    <button type="submit">
+Buscar</button>
+                </form>
+            </div>
+
+            <div class="language-container">
+              
+                      <a href="home.html">English</a></option>
+                         <a href="gt.html">Espanol</a></option>   
+                         <a href="kj.html">Frencis</a></option>
+                            <a href="nj.html">Bengali</a></option>
+                               <a href="bj.html">Detusch</a></option>
+                    
+
+            
+                   
+          
+              
+            </div>
+        </div>
+    </header>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url(1.jpg)
+    ;
+}
+
+#site-header {
+    border-bottom: 1px solid #a7d7f9;
+   
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgoldenrod;
+    
+
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: #0645ad;
+   
+    font-size: 0.9em;
+}
+
+.account-container a:hover {
+    text-decoration: underline;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkgoldenrod;
+    padding: 10px 20px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.top-nav ul li {
+    margin-left: 15px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.top-nav ul li a:hover {
+    background-color: #f8f9fa;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #a7d7f9;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: 1px solid #a7d7f9;
+    background-color: #0645ad;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #06318a;
+}
+
+.utility-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.utility-links ul li {
+    margin-left: 15px;
+}
+
+.utility-links ul li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 0.9em;
+}
+
+.utility-links ul li a:hover {
+    text-decoration: underline;
+}
+</style>
+
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color:lightcyan;
+            line-height: 1.8;
+            margin: 0;
+        
+             background: rgb(122,0,0);
+background: linear-gradient(174deg, rgba(122,0,0,1) 1%, rgba(0,37,128,1) 42%, rgba(16,0,123,1) 63%, rgba(0,1,51,1) 85%);
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+
+            color: red;
+            margin-bottom: 30px;
+            margin-right:80px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+           
+        }
+        h1:hover{
+             
+            transform: scale(1.02);
+            font-family: 'Arial', sans-serif;
+            color:yellow;
+        }
+        p {
+            background-color: lightsalmon;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.7;
+            border-left: 5px solid #3498db;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        p:hover {
+            background-color: lightgreen;
+            transform: scale(1.02);
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            background-color: #f9ebea;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        .important {
+            font-size: 1.3em;
+            color: #27ae60;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .italic {
+            font-style: italic;
+            color: #3498db;
+        }
+        .underline {
+            text-decoration: underline;
+            color: #f39c12;
+        }
+        .custom-span {
+            background-color:orangered;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fútbol Club Barcelona </h1>
+
+
+
+
+
+
+       
+ 
+
+<p>El Fútbol Club Barcelona (en catalán: Futbol Club Barcelona), conocido popularmente como Barça,n. 1​ es una entidad polideportiva con sede en Barcelona (Cataluña, España). Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903.8​9​10​
+
+Tanto el club como sus hinchas reciben el apelativo de «culers» (pronunciado culés),11​ y también, en referencia a sus colores, «azulgranas»3​ o «blaugranas».12​n. 2​ En su oficina de atención al barcelonista se atiende en los tres idiomas oficiales del club, que son: el catalán, el castellano y el inglés.13​
+
+A nivel institucional es uno de los cuatro clubes profesionales de fútbol del país cuya entidad jurídica no es la de sociedad anónima deportiva (S. A. D.),n. 3​ ya que su propiedad recae en sus más de 143 000 socios. Otra salvedad comparte con el Athletic Club y el Real Madrid al participar sin interrupción en la máxima categoría de la Liga Nacional de Fútbol Profesional, la Primera División de España, desde su establecimiento en 1929.14​15​ En ella posee los honores de haber sido el primer campeón histórico de la competición,16​ su segundo club con más títulos, y el de la máxima puntuación en una sola edición.17​n. 4​
+
+Sumando torneos nacionales e internacionales, es el segundo club español más laureado,18​ a nivel nacional domina el palmarés con setenta y siete campeonatos,19​n. 5​ y a nivel internacional ostenta veintidós trofeos, situado en el segundo puesto europeo.19​n. 5​ Mismo puesto ocupa como club polideportivo con más copas de Europa contando todas sus secciones profesionales —por detrás del CSKA de Moscú—, con 48.20​n. 6​
+
+Según las estadísticas que realiza el IFFHS, el F. C. Barcelona es el mejor equipo de fútbol europeo y mundial de la primera y segunda década del siglo xxi,n. 7​21​ y lidera el ranking global del siglo con 5228 puntos con una diferencia de 365 puntos sobre el segundo clasificado (Real Madrid C. F.).22​ Es además el equipo de fútbol que más veces ha figurado en los podios del FIFA World Player (19) y del Balón de Oro (34).n. 8​
+
+Una de las principales características del F. C. Barcelona es su carácter polideportivo. Se distingue por ser una de las instituciones polideportivas más laureadas, entre las que destacan sus secciones de fútbol, baloncesto, balonmano y hockey, todas ellas con un amplio palmarés europeo.23​ Es el primer club europeo en ser campeón continental en la rama masculina y femenina, y el primero en lograr un triplete con ambas.24​ Asimismo, los medallistas olímpicos que han representado a la entidad blaugrana han conquistado once oros, veintitrés platas y veintiocho bronces en las distintas disciplinas deportivas.25​
+
+Quince exintegrantes del club fueron incluidos en el Salón de la Fama del Fútbol Internacional, un proyecto dedicado a preservar la memoria de relevantes personajes de la historia del fútbol.26​ Entre ellos se incluyen: Johan Cruyff, Diego Maradona, Ricardo Zamora, Luís Figo, Ronaldo Nazário, Hristo Stoichkov, Romário, Pep Guardiola, Ronaldinho de Assis, Rivaldo, Carles Puyol, Samuel Eto'o y Xavi Hernández, a los que se une László Kubala como «decano», o de especial trascendencia, y Rafael Márquez como «nacional».27​
+
+Otro de sus hechos distintivos es su masa social de socios y aficionados. El club ha logrado integrar de forma estratégica cuestiones políticas, religiosas, culturales y sociales, que van enmarcadas dentro del ámbito deportivo, esto permite que los socios y los aficionados respondan a todos los eventos sociales del club, también que tengan mayor participación en actividades administrativas y se fortalezcan los vínculos entre las peñas.28​ En 2022 contaba con aproximadamente 143 083 socios.n. 9​29​ Existen, además, 1273 peñas barcelonistas repartidas por todo el mundo.30​
+
+Sus dos rivales históricos son el Real Madrid Club de Fútbol, contra el que disputa «El Clásico», y el Real Club Deportivo Espanyol, con quien se enfrenta en el «derbi barcelonés», siendo el primero uno de los encuentros de mayor rivalidad e interés del fútbol mundial.31​
+
+Un 22 % de los aficionados al fútbol encuestados en el año 2021 en España por el portal de estadísticas de mercado y opinión Statista lo señalan como el segundo club más popular.32​ El número de simpatizantes33​ favorece que posea un valor en el mercado estimado en algo más de 3500 millones de euros y obtuviera en 2020-21 una cantidad de ingresos de 631 millones sin contar traspasos de jugadores,34​35​ si bien desde las últimas décadas acucia una fuerte deuda estimada en 1350 millones a fecha de 2021 según el club,35​36​ sin contar el proyecto Espai Barça, bajo un préstamo de 815 millones de la banca de inversión Goldman Sachs.37​38​ Un buen indicador de la crítica situación económica del club se refleja en el patrimonio neto, indicador de los recursos propios del club. Es la medida contable del valor del mismo, esto es, los fondos que junto con los recursos ajenos financian sus necesidades para el desarrollo de sus actividades. A fecha de 2021 es negativo en 451 millones,39​ mientras que su fondo de maniobra es negativo de 553 millones, por lo que solicitó a comienzos de 2021 una dispensa a bancos y fondos financieros para evitar la quiebra</p>
+<h1>Rivales</h1>
+
+<p>A menudo existe una rivalidad feroz entre los dos equipos más fuertes de una liga nacional, y este es particularmente el caso en La Liga, donde el partido entre Barcelona y Real Madrid se conoce como "El Clásico". Desde el inicio de las competiciones nacionales, los clubes fueron vistos como representantes de dos regiones rivales de España: Cataluña y Castilla, así como de las dos ciudades. La rivalidad refleja lo que muchos consideran las tensiones políticas y culturales sentidas entre catalanes y castellanos, vistas por un autor como una recreación de la Guerra Civil española.[200] A lo largo de los años, el récord de enfrentamientos directos entre los dos clubes es de 102 victorias para el Madrid, 100 victorias para el Barcelona y 52 empates.
+
+
+Aficionados del Barcelona creando un mosaico de la bandera catalana antes de El Clásico de 2012 en el Camp Nou
+Ya en la década de 1930, Barcelona "se había ganado una reputación como símbolo de la identidad catalana, opuesta a las tendencias centralizadoras de Madrid". En 1936, cuando Francisco Franco inició el Golpe de Estado contra la democrática Segunda República Española, el presidente de Barcelona, ​​Josep Sunyol, miembro de Esquerra Republicana de Cataluña y diputado a las Cortes, fue detenido y ejecutado sin juicio por las tropas de Franco. 204] (Sunyol se encontraba ejerciendo sus actividades políticas, visitando a las tropas republicanas al norte de Madrid).[202] Durante las dictaduras de Miguel Primo de Rivera y especialmente de Francisco Franco, todas las lenguas e identidades regionales en España estaban mal vistas y restringidas. Como tal, la mayoría de los ciudadanos de Barcelona se oponían firmemente al régimen de tipo fascista. En este período, Barcelona ganó su lema Més que un club (inglés: Más que un club) debido a su supuesta conexión con las creencias nacionalistas catalanas y progresistas.
+Existe una controversia en curso sobre hasta qué punto el gobierno de Franco (1939-75) influyó en las actividades y resultados en el campo tanto del Barcelona como del Real Madrid. Los aficionados de ambos clubes tienden a exagerar los mitos que favorecen sus narrativas. La mayoría de los historiadores coinciden en que Franco no tenía un equipo de fútbol preferido, pero sus creencias nacionalistas españolas lo llevaron a asociarse con los equipos del establishment, como el Atlético Aviación y el Madrid FC (que recuperó su nombre real tras la caída de la República). Por otro lado, también quería que el renombrado CF Barcelona triunfara como "equipo español" y no como catalán. Durante los primeros años del gobierno de Franco, el Real Madrid no tuvo mucho éxito, ganando dos títulos de la Copa del Generalísimo y una Copa Eva Duarte; El Barcelona consiguió tres títulos de Liga, una Copa del Generalísimo y una Copa Eva Duarte. Durante ese período, se creía que el Atlético Aviación era el equipo preferido sobre el Real Madrid. Las historias más controvertidas de la época incluyen la victoria del Real Madrid en casa por 11-1 contra el Barcelona en la Copa del Generalísimo, donde el equipo catalán alegó intimidación, y el controvertido traspaso de Alfredo Di Stéfano al Real Madrid a pesar de su acuerdo con el Barcelona. Esta última transferencia fue parte de la "revolución" del presidente del Real Madrid, Santiago Bernabéu, que marcó el comienzo de una era de dominio sin precedentes. Bernabéu, un veterano de la Guerra Civil que luchó para las fuerzas de Franco, vio al Real Madrid en la cima no sólo del fútbol español sino también del europeo, ayudando a crear la Copa de Europa, la primera competición verdadera para los mejores clubes de Europa. Su visión se cumplió cuando el Real Madrid no sólo empezó a ganar títulos de liga consecutivos sino que también arrasó en las primeras cinco ediciones de la Copa de Europa en la década de 1950.[206] Estos hechos tuvieron un profundo impacto en el fútbol español e influyeron en la actitud de Franco. Según los historiadores, durante este tiempo se dio cuenta de la importancia del Real Madrid para la imagen internacional de su régimen, y el club se convirtió en su equipo preferido hasta su muerte. Fernando María Castiella, que fue ministro de Asuntos Exteriores durante el régimen de Franco desde 1957 hasta 1969, señaló que "[el Real Madrid] es la mejor embajada que hemos tenido". Franco murió en 1975 y pronto siguió la transición española a la democracia. Bajo su gobierno, el Real Madrid había ganado 14 títulos de Liga, 6 títulos de Copa del Generalísimo, 1 Copa Eva Duarte, 6 Copas de Europa, 2 Copas Latinas y 1 Copa Intercontinental. En el mismo período, Barcelona había ganado 8 títulos de Liga, 9 títulos de Copa del Generalísimo, 3 títulos de Copa Eva Duarte, 3 Copas de Ferias Interurbanas y 2 Copas Latinas.
+</p>
+<h1>Equipos</h1>
+<p>El escudo original del club era un escudo en forma de diamante en cuartos rematado por la Corona de Aragón y el murciélago del Rey James, y rodeado por dos ramas, una de laurel y la otra de una palmera. El club compartió el escudo de Barcelona, ​​como demostración de su identificación con la ciudad y del deseo de ser reconocido como tal.[294] En 1910, el club convocó un concurso entre sus socios para diseñar un nuevo escudo. El ganador fue Carles Comamala, que en aquel momento militaba en el club. La sugerencia de Comamala se convirtió en el escudo que luce hoy el club, con algunas pequeñas variaciones. El escudo consta de la Cruz de San Jorge en la esquina superior izquierda con la bandera catalana al lado y los colores del equipo en la parte inferior.
+
+Los colores azul y granate de la camiseta se usaron por primera vez en un partido contra el Hispania en 1900.[296] Se han presentado varias teorías en competencia sobre el diseño azul y granate de la camiseta del Barcelona. El hijo del primer presidente, Arthur Witty, afirmó que fue idea de su padre ya que los colores eran los mismos que los del equipo de Merchant Taylor's School. Otra explicación, según el autor Toni Strubell, es que los colores provienen de la Primera República de Robespierre. En Cataluña la percepción común es que los colores fueron elegidos por Joan Gamper y son los de su equipo local, el FC Basel.
+
+</p>
+<h1>Gestión</h1>
+<p>Entrenador: Hansi Flick
+Entrenadores asistentes: España Arnau Blanco,
+ Marco Sorg,
+ Toni Tapalovic,
+ Heiko Westermann.
+Entrenador de porteros: José Ramón de la Fuente.
+Responsable de preparación física: Julio Tous.
+Preparador físico de campo: Pepe Conde
+ ,Rafa Maldonado
+Preparador de gimnasio y musculación: Germán Fernández.
+Analistas: Sergio García,
+tony lobo
+,David Pratz
+Fisioterapeutas: Juanjo Brau,
+Xavi Linde,,
+ Xavi López,
+ Xavier Elin,
+ Jordi Mesalles,
+ Sebastián Salas,
+ Daniel Benito.
+Médicos del club: Ricard Pruna,
+ Xavier Yanguas,
+ Daniel Florit,
+Delegado Carles Naval.
+</p>
+
+ <footer>
+    <div class="footer-columns">
+       
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+                You will know about all the important history with photo in The page
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <p><a href="jenji.html">Home page</a></p>
+            <p><a href="Ticket.html">Tickets</a></p>
+            <p><a href="ghghghg.html">Players</a></p>
+            <p><a href="jersey.html">Jerseys</a></p>
+              <p><a href="lullu.html">Photo gallery</a></p>
+                <p><a href="ep.html">Antontube</a></p>
+                 <p><a href="hhh.html">Match Calender and Schedules</a></p>
+                  <p><a href="kk.html">Recent Players</a></p></div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100004543547747" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/jannatsumy/" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+      
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+ footer {
+           background: rgb(53,0,122);
+background: linear-gradient(242deg, rgba(53,0,122,1) 35%, rgba(16,0,123,1) 40%, rgba(0,37,128,1) 48%, rgba(0,1,51,1) 95%);
+            text-align: center;
+    
+            margin-top: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            width: 250px;
+            padding: 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .footer-column p, 
+        .footer-column a {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ddd;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #fff;
+        }
+      
+
+
+
+
+
+</style>
+
+
+</style>
+
+</body>
+</html>
+
+</style>
+
+</body>
+</html>
+
+

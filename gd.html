@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Mobile Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <div class="verify-mobile-container">
+        <h2>Verify Your Mobile Number</h2>
+        <form action="send-verification-code.php" method="POST">
+   
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+       
+            <button type="submit">Send Verification Code</button>
+        </form>
+    </div>
+      
+    <style>
+  
+body {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color:darkcyan;
+   background: rgb(130,8,8);
+background: linear-gradient(180deg, rgba(130,8,8,1) 14%, rgba(13,3,66,1) 45%, rgba(3,8,88,1) 85%);
+    margin: 0;
+    padding: 0;
+    height:50 ev;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.verify-mobile-container,
+.verify-code-container {
+    margin-top: 50px;
+}
+
+
+.forgot-password-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+
+
+
+</html>
