@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wikipedia-Like Website</title>
+    <link rel="stylesheet"  href="style.css2">
+</head>
+<body>
+    <header>
+        <h1>My Wikipedia-Like Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <form action="search.html" method="GET">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+<style>
+        /* Hide all section content by default */
+        .section-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Show the section content when it is active */
+        .section-content.active {
+            display: block;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        article {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            cursor: pointer;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Wikipedia-Like Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#section1" onclick="toggleSection('section1')">Section 1: Introduction</a></li>
+                <li><a href="#section2" onclick="toggleSection('section2')">Section 2: Details</a></li>
+                <li><a href="#section3" onclick="toggleSection('section3')">Section 3: Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <article>
+            <section id="section1">
+                <h3 onclick="toggleSection('section1')">Section 1: Introduction</h3>
+                <div class="section-content">
+                    <p>This is the content of Section 1. Here, you can introduce the topic and provide relevant information.</p>
+                    <p>Another paragraph with additional details about Section 1.</p>
+                </div>
+            </section>
+
+            <section id="section2">
+                <h3 onclick="toggleSection('section2')">Section 2: Details</h3>
+                <div class="section-content">
+                    <p>This is the content of Section 2. You can expand on the topic with more details here.</p>
+                </div>
+            </section>
+
+            <section id="section3">
+                <h3 onclick="toggleSection('section3')">Section 3: Conclusion</h3>
+                <div class="section-content">
+                    <p>This is the content of Section 3. Wrap up the discussion or provide a summary here.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 My Wikipedia-Like Website</p>
+    </footer>
+</body>
+</html>
