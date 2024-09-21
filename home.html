@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia-like Header with Language Option</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+     
+
+
+
+    <!-- Enhanced Wikipedia-like Header -->
+    <header id="site-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="12.jpg" alt="Wikipedia Logo">
+                </a>
+            </div>
+
+           
+        <div class="header-bottom">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="/Main_Page">Main Page</a></li>
+                    <li><a href="/Contents">Contents</a></li>
+                    
+                    <li><a href="/Random_page">Random page</a></li>
+                    <li><a href="/About">About</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" name="search" placeholder="Search Wikipedia...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="language-container">
+              
+                      <a href="home.html">English</a></option>
+                         <a href="gt.html">Espanol</a></option>   
+                         <a href="kj.html">Frencis</a></option>
+                            <a href="nj.html">Bengali</a></option>
+                               <a href="bj.html">Detusch</a></option>
+                    
+
+            
+                   
+          
+              
+            </div>
+        </div>
+    </header>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url(1.jpg)
+    
+}
+#site-header {
+    border-bottom: 1px solid #a7d7f9;
+    margin-bottom: 20px;
+
+
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgoldenrod;
+    padding: 10px 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.account-container a {
+    text-decoration: none;
+
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.account-container a:hover {
+    text-decoration: underline;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 20px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.top-nav ul li {
+    margin-left: 15px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.top-nav ul li a:hover {
+    background-color: #f8f9fa;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #a7d7f9;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: 1px solid #a7d7f9;
+    background-color: #0645ad;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #06318a;
+}
+
+.utility-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.utility-links ul li {
+    margin-left: 15px;
+}
+
+.utility-links ul li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 0.9em;
+}
+
+.utility-links ul li a:hover {
+    text-decoration: underline;
+}
+</style>
+
+ <div class="grid-container">
+       
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color:lightcyan;
+            line-height: 1.8;
+            margin: 0;
+     
+             background: rgb(122,0,0);
+background: linear-gradient(174deg, rgba(122,0,0,1) 1%, rgba(0,37,128,1) 42%, rgba(16,0,123,1) 63%, rgba(0,1,51,1) 85%);
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+
+            color: red;
+            margin-bottom: 30px;
+            margin-right:80px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+           
+        }
+        h1:hover{
+             
+            transform: scale(1.02);
+            font-family: 'Arial', sans-serif;
+            color:yellow;
+        }
+        p {
+            background-color: lightsalmon;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.7;
+            border-left: 5px solid #3498db;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        p:hover {
+            background-color: lightgreen;
+            transform: scale(1.02);
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            background-color: #f9ebea;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        .important {
+            font-size: 1.3em;
+            color: #27ae60;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .italic {
+            font-style: italic;
+            color: #3498db;
+        }
+        .underline {
+            text-decoration: underline;
+            color: #f39c12;
+        }
+        .custom-span {
+            background-color:orangered;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+</div>
+
+
+    <h1>Fc Barcelona</h1>
+
+
+
+
+
+
+       
+ 
+
+<p>Futbol Club Barcelona (Catalan pronunciation: [fubˈbɔl ˈklub bəɾsəˈlonə] ⓘ), commonly known as Barcelona and familiarly as Barça ([ˈbaɾsə]), is a professional football club based in Barcelona, Catalonia, Spain, that competes in La Liga, the top flight of Spanish football.
+
+Founded in 1899 by a group of Swiss, Catalan, German, and English footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" ("More than a club").[2] Unlike many other football clubs, the supporters own and operate Barcelona. It is the third-most valuable football club in the world, worth $5.51 billion, and the world's fourth richest football club in terms of revenue, with an annual turnover of €800.1 million.[3][4] The official Barcelona anthem is the "Cant del Barça", written by Jaume Picas and Josep Maria Espinàs.[5] Barcelona traditionally play in dark shades of blue and garnet stripes, hence nicknamed Blaugrana.
+
+Domestically, Barcelona has won a record 77 trophies: 27 La Liga, 31 Copa del Rey, 14 Supercopa de España, three Copa Eva Duarte, and two Copa de la Liga titles, as well as being the record holder for the latter four competitions. In international club football, the club has won 22 European and worldwide titles: five UEFA Champions League titles, a record four UEFA Cup Winners' Cups, five UEFA Super Cups, a record three Inter-Cities Fairs Cups, a joint record two Latin Cups, and three FIFA Club World Cups.[6][7][8] Barcelona was ranked first in the International Federation of Football History & Statistics Club World Ranking for 1997, 2009, 2011, 2012, and 2015, and occupies the ninth position on the UEFA club rankings as of May 2023.[9][10][11] The club has a long-standing rivalry with Real Madrid, and matches between the two teams are referred to as El Clásico.
+
+Barcelona is one of the most widely supported teams in the world, and the club has one of the largest social media following in the world among sports teams.[12][13] Barcelona players have won a joint record twelve Ballon d'Or awards, with recipients including Johan Cruyff, as well as a record six FIFA World Player of the Year awards, with winners including Romário, Ronaldo, Rivaldo, Ronaldinho and Lionel Messi. In 2010, three players who came through the club's youth academy—Lionel Messi, Andrés Iniesta and Xavi—were chosen as the three best players in the world in the Ballon d'Or ranking, an unprecedented feat for players from the same football academy.[14][15] Additionally, players representing the club have won a record eight European Golden Shoe awards.[16]
+
+Barcelona is one of three founding members of the Primera División that have never been relegated from the top division since its inception in 1929, along with Athletic Bilbao and Real Madrid.[17][18] In 2009, Barcelona became the first Spanish club to win the continental treble consisting of La Liga, Copa del Rey and the UEFA Champions League, and also became the first European football club to win six out of six competitions in a single year, by also winning the Spanish Super Cup, UEFA Super Cup and FIFA Club World Cup.[19] In 2011, the club became European champions again, winning five trophies.[20] This Barcelona team, which won fourteen trophies in just four years under Pep Guardiola, is considered by some in the sport to be the greatest team of all time.[21][22][23] By winning their fifth Champions League trophy in 2015 under Luis Enrique, Barcelona became the first European football club in history to achieve the continental treble twice.</p>
+<h1>Rivals</h1>
+<p>There is often a fierce rivalry between the two strongest teams in a national league, and this is particularly the case in La Liga, where the game between Barcelona and Real Madrid is known as "The Classic" (El Clásico). From the start of national competitions the clubs were seen as representatives of two rival regions in Spain: Catalonia and Castile, as well as of the two cities. The rivalry reflects what many regard as the political and cultural tensions felt between Catalans and the Castilians, seen by one author as a re-enactment of the Spanish Civil War.[200] Over the years, the head-to-head record between the two clubs is 102 victories for Madrid, 100 victories for Barcelona, and 52 draws.[201]
+
+
+Barcelona fans creating a mosaic of the Catalan flag before a 2012 El Clasico at Camp Nou
+As early as the 1930s, Barcelona "had developed a reputation as a symbol of Catalan identity, opposed to the centralising tendencies of Madrid".[202][203] In 1936, when Francisco Franco started the Coup d'état against the democratic Second Spanish Republic, the president of Barcelona, Josep Sunyol, member of the Republican Left of Catalonia and Deputy to The Cortes, was arrested and executed without trial by Franco's troops[204] (Sunyol was exercising his political activities, visiting Republican troops north of Madrid).[202] During the dictatorships of Miguel Primo de Rivera and especially Francisco Franco, all regional languages and identities in Spain were frowned upon and restrained. As such, most citizens of Barcelona were in strong opposition to the fascist-like regime. In this period, Barcelona gained their motto Més que un club (English: More than a club) because of its alleged connection to Catalan nationalist as well as to progressive beliefs.
+
+There's an ongoing controversy as to what extent Franco's rule (1939–75) influenced the activities and on-pitch results of both Barcelona and Real Madrid. Fans of both clubs tend to exaggerate the myths favouring their narratives. Most historians agree than Franco did not have a preferred football team, but his Spanish nationalist beliefs led him to associate himself with the establishment teams, such as Atlético Aviación and Madrid FC (that recovered its royal name after the fall of the Republic). On the other hand, he also wanted the renamed CF Barcelona succeed as "Spanish team" rather than a Catalan one. During the early years of Franco's rule, Real Madrid weren't particularly successful, winning two Copa del Generalísimo titles and a Copa Eva Duarte; Barcelona claimed three league titles, one Copa del Generalísimo and one Copa Eva Duarte. During that period, Atlético Aviación were believed to be the preferred team over Real Madrid. The most contested stories of the period include Real Madrid's 11–1 home win against Barcelona in the Copa del Generalísimo, where the Catalan team alleged intimidation, and the controversial transfer of Alfredo Di Stéfano to Real Madrid despite his agreement with Barcelona. The latter transfer was part of Real Madrid chairman Santiago Bernabéu's "revolution" that ushered in the era of unprecedented dominance. Bernabéu, himself a veteran of the Civil War who fought for Franco's forces, saw Real Madrid on top not only of Spanish but also European football, helping create the European Cup, the first true competition for Europe's best club sides. His vision was fulfilled when Real Madrid not only started winning consecutive league titles but also swept the first five editions of the European Cup in the 1950s.[206] These events had a profound impact on Spanish football and influenced Franco's attitude. According to historians, during this time he realized the importance of Real Madrid for his regime's international image, and the club became his preferred team until his death. Fernando Maria Castiella, who served as Minister of Foreign Affairs under Franco from 1957 until 1969, noted that "[Real Madrid] is the best embassy we have ever had." Franco died in 1975, and the Spanish transition to democracy soon followed. Under his rule, Real Madrid had won 14 league titles, 6 Copa del Generalísimo titles, 1 Copa Eva Duarte, 6 European Cups, 2 Latin Cups, and 1 Intercontinental Cup. In the same period, Barcelona had won 8 league titles, 9 Copa del Generalísimo titles, 3 Copa Eva Duarte titles, 3 Inter-Cities Fairs Cups, and 2 Latin Cups.[207][208]
+
+
+La rivalidad se intensificó durante la década de 1950 cuando los clubes se disputaron el fichaje de Alfredo Di Stéfano. Di Stéfano había impresionado tanto al Barcelona como al Real Madrid mientras jugaba para Los Millonarios en Bogotá, Colombia, durante una huelga de jugadores en su Argentina natal. Poco después del regreso de Millonarios a Colombia, los directivos del Barcelona visitaron Buenos Aires y acordaron con River Plate, el último equipo afiliado a la FIFA que tuvo los derechos de Di Stéfano, su transferencia en 1954 por el equivalente a 150 millones de liras italianas (según otras fuentes). 200.000 dólares). Esto inició una batalla entre los dos rivales españoles por sus derechos. La FIFA designó como mediador a Armando Muñoz Calero, expresidente de la Federación Española de Fútbol. Calero decidió dejar que Di Stéfano jugara las temporadas 1953–54 y 1955–56 en Madrid, y las temporadas 1954–55 y 1956–57 en Barcelona. El acuerdo fue aprobado por la Asociación de Fútbol y sus respectivos clubes. Aunque los catalanes estuvieron de acuerdo, la decisión generó diversos descontentos entre los socios blaugrana y el presidente se vio obligado a dimitir en septiembre de 1953. Barcelona vendió al Madrid su mitad y Di Stéfano se mudó a Los Blancos, firmando un contrato de cuatro años. El Real pagó 5,5 millones de pesetas españolas por el traspaso, más 1,3 millones de plus por la compra, una cuota anual a pagar a los Millonarios y un sueldo de 16.000 para Di Stéfano con un plus que duplica el de sus compañeros, hasta un total de 40 % de los ingresos anuales del club madrileño.[209]
+
+Di Stéfano fue fundamental en el éxito posterior alcanzado por el Real Madrid, marcando dos goles en su primer partido contra el Barcelona. Con él, el Madrid ganó las cinco primeras ediciones de la Copa de Europa.[210] En la década de 1960, la rivalidad llegó al escenario europeo cuando Real Madrid y Barcelona se enfrentaron dos veces en la Copa de Europa, con el Madrid triunfando camino a su quinto título consecutivo en 1959-60 y el Barcelona prevaleciendo camino de perder la final en 1960-61. En 2002, los medios españoles denominaron el encuentro europeo entre los clubes el "Partido del Siglo", y la victoria del Madrid fue vista por más de 500 millones de personas.[211] Un partido intenso que está marcado por su indisciplina, además de memorables celebraciones de goles de ambos equipos, que a menudo implican burlas del rival, celebraciones tan notables ocurrieron en 2009 cuando el capitán del Barcelona, ​​Carles Puyol, besó su brazalete catalán frente a los indignados fanáticos del Madrid en el Santiago Bernabéu. Stadium y en 2017, cuando Lionel Messi celebró el gol de la victoria del Barcelona en el minuto 93 contra el Real Madrid en el Bernabéu quitándose la camiseta del Barcelona y mostrándola a los indignados fanáticos del Real Madrid, con su nombre y</p>
+<h1>Kits</h1>
+<p>The club's original crest was a quartered diamond-shaped crest topped by the Crown of Aragon and the bat of King James, and surrounded by two branches, one of a laurel tree and the other a palm.[32] The club shared Barcelona's coat of arms, as a demonstration of its identification with the city and a desire to be recognised as one.[294] In 1910, the club held a competition among its members to design a new crest. The winner was Carles Comamala, who at the time played for the club. Comamala's suggestion became the crest that the club wears today, with some minor variations. The crest consists of the St George Cross in the upper-left corner with the Catalan flag beside it, and the team colours at the bottom.[295]
+
+The blue and garnet colours of the shirt were first worn in a match against Hispania in 1900.[296] Several competing theories have been put forth for the blue and garnet design of the Barcelona shirt. The son of the first president, Arthur Witty, claimed it was the idea of his father as the colours were the same as the Merchant Taylor's School team. Another explanation, according to author Toni Strubell, is that the colours are from Robespierre's First Republic. In Catalonia the common perception is that the colours were chosen by Joan Gamper and are those of his home team, FC Basel.
+</p>
+<h1>Management</h1>
+<p>Head coach:  Hansi Flick
+Assistant coaches: Spain Arnau Blanco,
+ Marcus Sorg,
+ Toni Tapalović,
+ Heiko Westermann.
+Goalkeeping coach : José Ramón de la Fuente.
+Head of fitness training  :Julio Tous.
+Field fitness coach: Pepe Conde
+ ,Rafa Maldonado
+Gym and strength fitness coach : Germán Fernández.
+Analysts : Sergio García,
+Toni Lobo
+,David Prats
+Physiotherapists:Juanjo Brau,
+Xavi Linde,,
+ Xavi López,
+ Xavier Elain,
+ Jordi Mesalles,
+ Sebas Salas,
+ Daniel Benito.
+Club doctors : Ricard Pruna,
+ Xavier Yanguas,
+ Daniel Florit,
+Delegate  Carles Naval.</p>
+
+
+<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRonaldo_%2528Brazilian_footballer%2529&psig=AOvVaw1x6MHuCYklUz2yUf1b25ar&ust=1724933799289000&source=images&cd=vfe&opi=89978449&ved=0CAYQrpoMahcKEwiQ9pe11ZeIAxUAAAAAHQAAAAAQBA">For more information about him, click the link below:</a>
+
+
+</style>
+
+</div>
+</body>
+<footer>
+    <footer>
+    <div class="footer-columns">
+       
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+                You will know about all the important history with photo in The page
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <p><a href="jenji.html">Home page</a></p>
+            <p><a href="Ticket.html">Tickets</a></p>
+            <p><a href="ghghghg.html">Players</a></p>
+            <p><a href="jersey.html">Jerseys</a></p>
+              <p><a href="lullu.html">Photo gallery</a></p>
+                <p><a href="ep.html">Antontube</a></p>
+                 <p><a href="hhh.html">Match Calender and Schedules</a></p>
+                  <p><a href="kk.html">Recent Players</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100004543547747" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/jannatsumy/" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+      
+      
+    </div>
+</footer>
+<style>
+ footer {
+             background: rgb(53,0,122);
+background: linear-gradient(242deg, rgba(53,0,122,1) 35%, rgba(16,0,123,1) 40%, rgba(0,37,128,1) 48%, rgba(0,1,51,1) 95%);
+            text-align: center;
+            padding: 20px 0;
+        
+           
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+         
+        }
+        .footer-column {
+            width: 250px;
+            padding: 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .footer-column p, 
+        .footer-column a {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+       
+      
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ddd;
+            font-size: 18px;
+            text-decoration: none;
+        }
+       
+
+
+
+
+</style>
+
+
+</footer>
+</header>
+
+  
+
+</html>

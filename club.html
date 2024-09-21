@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Football Club Registration</h1>
+    </header>
+    
+    <main>
+        <section id="registration">
+            <h2>Join Our Club</h2>
+            <form id="registration-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="position">Preferred Position:</label>
+                <select id="position" name="position">
+                    <option value="forward">Forward</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="defender">Defender</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                </select>
+                
+                <label for="experience">Football Experience:</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+                <label for="gender">Gender:</label>
+<select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+<label for="emergency-contact">Emergency Contact Name:</label>
+<input type="text" id="emergency-contact" name="emergency-contact" required>
+
+<label for="emergency-phone">Emergency Contact Phone:</label>
+<input type="tel" id="emergency-phone" name="emergency-phone" required>
+<label for="shirt-size">Shirt Size:</label>
+<select id="shirt-size" name="shirt-size">
+    <option value="s">Small</option>
+    <option value="m">Medium</option>
+    <option value="l">Large</option>
+    <option value="xl">Extra Large</option>
+</select>
+<label for="card-number">Card Number:</label>
+<input type="text" id="card-number" name="card-number" required>
+
+<label for="expiry-date">Expiry Date:</label>
+<input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+<label for="cvv">CVV:</label>
+<input type="text" id="cvv" name="cvv" required>
+<label for="billing-address">Billing Address:</label>
+<textarea id="billing-address" name="billing-address" rows="3" required></textarea>
+
+
+<label for="profile-picture">Upload Profile Picture:</label>
+<input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+
+<label for="medical-cert">Upload Medical Certificate:</label>
+<input type="file" id="medical-cert" name="medical-cert" accept=".pdf,.doc,.docx">
+
+</select>
+<input type="text" id="phone" name="phone" pattern="\d{10}" required>
+<span class="error-message" id="phone-error">Please enter a valid 10-digit phone number.</span>
+
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+
+<div class="search-bar">
+    <input type="text" placeholder="Search for tickets or events...">
+    <button type="submit">Search</button>
+</div>
+<div class="user-menu">
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+    <a href="#profile">My Profile</a>
+</div>
+
+
+
+
+   
+
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    color:lightgreen;
+    margin: 0;
+    padding: 0;
+  background: rgb(122,0,0);
+background: linear-gradient(174deg, rgba(122,0,0,1) 1%, rgba(0,37,128,1) 42%, rgba(16,0,123,1) 63%, rgba(0,1,51,1) 85%);
+}
+
+header {
+    background-color:black;
+    color: Light;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.user-menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.user-menu a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+
+
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+</style>
+
+
+  <footer>
+     <footer>
+    <div class="footer-columns">
+       
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+                You will know about all the important history with photo in The page
+            </p>
+        </div>
+
+       <div class="footer-column">
+            <h3>Useful Links</h3>
+            <p><a href="jenji.html">Home page</a></p>
+            <p><a href="Ticket.html">Tickets</a></p>
+            <p><a href="ghghghg.html">Players</a></p>
+            <p><a href="jersey.html">Jerseys</a></p>
+              <p><a href="lullu.html">Photo gallery</a></p>
+                <p><a href="ep.html">Antontube</a></p>
+                 <p><a href="hhh.html">Match Calender and Schedules</a></p>
+                  <p><a href="kk.html">Recent Players</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100004543547747" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/jannatsumy/" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+   
+        </div>
+    </div>
+</footer>
+<style>
+ footer {
+            background: rgb(53,0,122);
+background: linear-gradient(242deg, rgba(53,0,122,1) 35%, rgba(16,0,123,1) 40%, rgba(0,37,128,1) 48%, rgba(0,1,51,1) 95%);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            width: 250px;
+            padding: 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .footer-column p, 
+        .footer-column a {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ddd;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #fff;
+        }
+        
+        
+
+
+
+</style>
+
+</body>
+</html>
